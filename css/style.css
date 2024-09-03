@@ -51,7 +51,7 @@ main.container .user-info img {
   margin-bottom: 0.5em;
 }
 
-.user-info h3 {
+.user-info h2 {
   color: var(--Green);
   font-size: 1rem;
   font-weight: 600;
