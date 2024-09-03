@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Inter-var";
+  src: url("/assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey700: hsl(0, 0%, 20%);
+  --Grey800: hsl(0, 0%, 12%);
+  --Grey900: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: "Inter-var";
+  background-color: var(--Grey900);
+  color: var(--White);
+}
+
+main.container {
+  box-sizing: border-box;
+  background-color: var(--Grey800);
+  width: 90%;
+  max-width: 450px;
+  margin: 4rem auto;
+  padding: 1.5em 1.2em;
+  border-radius: 1em;
+}
+
+main.container .user-info {
+  text-align: center;
+}
+
+main.container .user-info img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.user-info h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+.user-info h3 {
+  color: var(--Green);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2em;
+}
+
+.user-info p {
+  font-size: 0.95rem;
+  margin: 2em 0;
+}
+
+main.container .user-social div {
+  text-align: center;
+  background-color: var(--Grey700);
+  margin: 1.2em 0;
+  padding: 1em 0;
+  border-radius: 0.5em;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+main.container .user-social div:hover,
+main.container .user-social div:focus {
+  background-color: var(--Green);
+  cursor: pointer;
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  main.container {
+    padding: 3em;
+  }
+}
